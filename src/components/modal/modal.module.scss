@@ -1,0 +1,77 @@
+.container {
+  font-family: var(--font-primary);
+
+  h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #1e396e;
+    margin: 2% 0;
+  }
+
+  .form {
+    margin-top: 5%;
+
+    form {
+      div {
+        label {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          color: #333333;
+        }
+
+        input {
+          width: 100%;
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid #333333;
+          margin: 2% 0 3%;
+        }
+      }
+
+      .upload {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #333333;
+
+        p {
+          @extend input;
+
+          span {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #1e396e;
+          }
+        }
+      }
+
+      .buttonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3%;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "nubitzweb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "aimscroll": "^1.0.3",
+    "aos": "^2.3.4",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "next": "^10.0.4",
+    "next-on-netlify": "2.9.0",
+    "next-videos": "1.4.0",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.2",
+    "react-slick": "^0.28.0",
+    "sass": "^1.32.2",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

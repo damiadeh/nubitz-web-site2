@@ -1,0 +1,11 @@
+.container {
+	display: block;
+}
+
+.hero {
+	padding: 8rem 0;
+
+	@media screen and (max-width: 992px) {
+		padding: 6rem 0;
+	}
+}

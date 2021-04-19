@@ -1,0 +1,112 @@
+.text {
+	&_welcome {
+		width: 182px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: calc(var(--font-h4) + 2px);
+		line-height: 29px;
+		text-transform: capitalize;
+		margin: 0 0 5px;
+
+		@media screen and (max-width: 1140px) {
+			margin-bottom: 16px;
+			font-size: var(--font-h4);
+			line-height: 22px;
+			width: unset !important;
+		}
+	}
+
+	img {
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+
+		&:hover {
+			cursor: pointer;
+			animation-name: bounce;
+			-moz-animation-name: bounce;
+		}
+
+		@keyframes bounce {
+			0%,
+			100%,
+			20%,
+			50%,
+			80% {
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+			}
+			40% {
+				-webkit-transform: translateY(-30px);
+				-ms-transform: translateY(-30px);
+				transform: translateY(-30px);
+			}
+			60% {
+				-webkit-transform: translateY(-15px);
+				-ms-transform: translateY(-15px);
+				transform: translateY(-15px);
+			}
+		}
+	}
+
+	&_title {
+		width: 500px;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 50px;
+		line-height: 70px;
+		text-transform: capitalize;
+		margin: 0;
+
+		@media screen and (max-width: 1024px) {
+			width: unset !important;
+			margin-bottom: 32px;
+			font-size: 48px;
+			line-height: 53px;
+		}
+
+		&_mini {
+			font-style: normal;
+			font-weight: bold;
+			font-size: var(--font-h5);
+			line-height: 30px;
+		}
+	}
+
+	&_description {
+		width: 489px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: calc(var(--font-h3) + 1px);
+		line-height: 40px;
+		margin: 2vh 0;
+
+		@media screen and (max-width: 1140px) {
+			width: unset !important;
+			margin-bottom: 48px;
+			max-width: 100%;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: unset !important;
+			margin: 3vh 0;
+			font-size: var(--font-h5);
+			line-height: 24px;
+		}
+
+		&_mini {
+			width: unset;
+			font-style: normal;
+			font-weight: normal;
+			font-size: var(--font-h5);
+			line-height: 26px;
+			margin: 0;
+		}
+	}
+}

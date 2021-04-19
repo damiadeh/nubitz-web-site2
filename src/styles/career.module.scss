@@ -1,0 +1,220 @@
+.container {
+	.hero {
+		padding: 8rem 0;
+
+		.heroImages {
+			display: grid;
+			grid-template-columns: 49% 49%;
+			column-gap: 2%;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.vacancies {
+		padding: 3rem 0;
+
+		.vacancyWrapper {
+			display: grid;
+			grid-template-columns: 30% 30% 30%;
+			column-gap: 3.3%;
+
+			@media screen and (max-width: 992px) {
+				display: block;
+			}
+
+			.vacancy {
+				background: #ffffff;
+				border: 1px solid #6979b7;
+				box-sizing: border-box;
+				border-radius: 5px;
+				padding: 15px;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+
+				@media screen and (max-width: 992px) {
+					margin-bottom: 2vh;
+				}
+
+				&_top {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					p {
+						font-style: normal;
+						font-weight: 800;
+						font-size: var(--font-h5);
+						line-height: 25px;
+						text-transform: capitalize;
+						color: #333333;
+						width: 222px;
+						margin-top: 0;
+					}
+
+					span {
+						font-style: normal;
+						font-weight: normal;
+						font-size: 13px;
+						line-height: 16px;
+						text-transform: capitalize;
+						color: #799aad;
+					}
+				}
+
+				&_mid {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+
+					div {
+						border: 1.5px solid rgba(121, 154, 173, 0.6);
+						box-sizing: border-box;
+						border-radius: 5px;
+
+						p {
+							font-weight: normal;
+							font-size: 12px;
+							line-height: 15px;
+							text-transform: capitalize;
+							color: #799aad;
+							padding: 10px 15px;
+							margin: 0;
+						}
+					}
+				}
+
+				&_bottomInner {
+					display: flex;
+					align-items: flex-start;
+					flex-direction: row;
+					align-self: flex-end;
+				}
+
+				&_bottom {
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-end;
+					flex-direction: column;
+
+					img {
+						margin-right: 10px;
+						align-self: center;
+					}
+
+					p {
+						font-style: normal;
+						font-weight: normal;
+						font-size: var(--font-h5);
+						line-height: 20px;
+						text-transform: capitalize;
+						color: #333333;
+					}
+				}
+
+				button {
+					width: 100%;
+					padding: 15px;
+					background: var(--primary);
+					backdrop-filter: blur(4px);
+					border-radius: 5px;
+					font-style: normal;
+					font-weight: 600;
+					font-size: var(--font-h4);
+					line-height: 27px;
+					color: #fdfdfd;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.offers {
+		padding: 4rem 0;
+
+		.offerWrapper {
+			display: grid;
+			grid-template-columns: 30% 30% 30%;
+			column-gap: 3.3%;
+
+			@media screen and (max-width: 992px) {
+				grid-template-columns: 48% 48%;
+				column-gap: 4%;
+			}
+
+			@media screen and (max-width: 420px) {
+				display: block;
+			}
+
+			.offer {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 3vh;
+
+				@media screen and (max-width: 992px) {
+					margin-bottom: 2vh;
+				}
+
+				img {
+					margin-right: 20px;
+				}
+
+				&_title {
+					font-style: normal;
+					font-weight: bold;
+					font-size: var(--font-h4);
+					color: var(--primary);
+					margin: 0;
+				}
+
+				&_description {
+					font-style: normal;
+					font-weight: normal;
+					font-size: calc(var(--font-p) + 1px);
+					line-height: 24px;
+					color: #333533;
+					margin: 2vh 0;
+				}
+			}
+		}
+	}
+
+	.textWrapper {
+		h3 {
+			width: 489px;
+			font-style: normal;
+			font-weight: 800;
+			font-size: calc(var(--font-h2) + 4px);
+			line-height: 30px;
+			text-transform: capitalize;
+			color: var(--primary);
+			margin: 0;
+
+			@media screen and (max-width: 992px) {
+				width: unset !important;
+				font-size: calc(var(--font-h4) + 2px);
+			}
+		}
+
+		p {
+			font-style: normal;
+			font-weight: normal;
+			font-size: var(--font-h5);
+			line-height: 20px;
+			color: #333333;
+			margin: 2vh 0 4vh;
+			width: 567px;
+
+			@media screen and (max-width: 992px) {
+				width: unset !important;
+				margin: 3vh 0;
+			}
+		}
+	}
+}

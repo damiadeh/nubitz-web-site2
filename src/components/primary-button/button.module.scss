@@ -1,0 +1,15 @@
+.button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+  font-size: 13px;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,226 @@
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: center;
+	// color: var(--white);
+
+	width: 100%;
+
+	@media (max-width: 992px) {
+		display: flex;
+		// flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		z-index: 10;
+		padding: 20px 0 20px 64px;
+		border-top: 1px solid #b4a9a3;
+		cursor: pointer;
+		// height: 220px;
+
+		@media screen and (max-width: 992px) {
+			padding: 19px 16px;
+			min-width: 270px;
+		}
+
+		.white {
+			display: none;
+
+			@media screen and (max-width: 1024px) {
+				display: block;
+			}
+		}
+
+		.colored {
+			display: block;
+
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
+
+		.number {
+			font-weight: 700;
+			font-size: 64px;
+
+			line-height: 70px;
+			color: transparent;
+			letter-spacing: -0.015em;
+			margin: 0 0 9px;
+			transition: 0.4s;
+
+			&:hover {
+				background: unset;
+			}
+
+			@media screen and (max-width: 992px) {
+				margin: 0;
+				font-size: 64px;
+				line-height: 70px;
+				letter-spacing: -0.015em;
+				z-index: 1;
+			}
+		}
+
+		&:nth-child(1) {
+			// background-image: linear-gradient(to right, var(--primary), #629fca);
+			background-color: transparent;
+
+			.number {
+				background: linear-gradient(90deg, #da22ff, #9733ee);
+				-webkit-background-clip: text;
+			}
+
+			&:hover {
+				// background-image: unset;
+				background: linear-gradient(263.56deg, #a931ff 5%, #fb31ff 104.13%);
+
+				.number {
+					color: white;
+				}
+			}
+
+			@media screen and (max-width: 992px) {
+				background: linear-gradient(263.56deg, #a931ff 5%, #fb31ff 104.13%);
+
+				.number {
+					color: white;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+			// background-image: linear-gradient(to right, #629fca,var(--primary), );
+			background-color: transparent;
+			color: linear-gradient(90.87deg, #ff3194 0.81%, #e31439 104.14%);
+
+			.number {
+				background: linear-gradient(90deg, #ec008c, #fc6767);
+				-webkit-background-clip: text;
+			}
+
+			&:hover {
+				// background-image: unset;
+				background: linear-gradient(90.87deg, #ff3194 0.81%, #e31439 104.14%);
+
+				.number {
+					color: white;
+				}
+			}
+
+			@media screen and (max-width: 992px) {
+				background: linear-gradient(90.87deg, #ff3194 0.81%, #e31439 104.14%);
+
+				.number {
+					color: white;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			// background-image: linear-gradient(to right, var(--primary), #629fca);
+			background-color: transparent;
+			color: linear-gradient(268.49deg, #fe8c00 5.15%, #d63907 98.7%);
+
+			.number {
+				background: linear-gradient(90deg, #e65c00, #f9d423);
+				-webkit-background-clip: text;
+			}
+
+			&:hover {
+				// background-image: unset;
+				background: linear-gradient(268.49deg, #fe8c00 5.15%, #d63907 98.7%);
+
+				.number {
+					color: var(--white);
+				}
+			}
+
+			@media screen and (max-width: 992px) {
+				background: linear-gradient(268.49deg, #fe8c00 5.15%, #d63907 98.7%);
+
+				.number {
+					color: white;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			// background-image: linear-gradient(to right, var(--primary), #629fca);
+			background-color: transparent;
+			color: linear-gradient(92.45deg, #3b1eeb 1.75%, #248ff2 93.53%);
+
+			.number {
+				background: linear-gradient(90deg, #0052d4, #4364f7 50%, #6fb1fc);
+				-webkit-background-clip: text;
+			}
+
+			&:hover {
+				// background-image: unset;
+				background: linear-gradient(92.45deg, #3b1eeb 1.75%, #248ff2 93.53%);
+
+				.number {
+					color: var(--white);
+				}
+			}
+
+			@media screen and (max-width: 992px) {
+				background: linear-gradient(92.45deg, #3b1eeb 1.75%, #248ff2 93.53%);
+
+				.number {
+					color: white;
+				}
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			padding: 30px;
+		}
+
+		&:nth-child(2) {
+			border-left: 1px solid #b4a9a3;
+			border-right: 1px solid #b4a9a3;
+		}
+
+		&:nth-child(4) {
+			border-left: 1px solid #b4a9a3;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.title {
+			margin: 0;
+			font-weight: 500;
+			font-size: calc(var(--font-h3) + 2px);
+			line-height: 29px;
+			color: var(--white);
+			max-width: 191px;
+
+			@media screen and (max-width: 992px) {
+				font-size: calc(var(--font-p) + 1px);
+				line-height: 23px;
+				letter-spacing: 0.01em;
+				z-index: 1;
+			}
+		}
+
+		.text {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 18px;
+			width: 238px;
+			// color: rgba(249, 249, 249, 0.8);
+		}
+	}
+}
